@@ -25,7 +25,6 @@ def is_token_valid(token):
         'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
         'Accept-Encoding': 'gzip, deflate, br',
         'Authorization': f'Bearer {token}', 
-        'refresh': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJoYXNfZ3Vlc3QiOmZhbHNlLCJ0eXBlIjoiUkVGUkVTSCIsImlzcyI6ImJsdW0iLCJzdWIiOiI5ODhjZDczNS1hOTA4LTRhY2QtOTQyZS00NTUyYWJiMjQyYjUiLCJleHAiOjE3MTUzODcyMDAsImlhdCI6MTcxNTMwMDgwMH0.v9bYXNnEL3yH3WKh_-Nrg1rVID7ELiHBJRQSa5At4G0',
         'Origin': 'https://telegram.blum.codes',
         'Referer': 'https://telegram.blum.codes/',
         'Sec-Fetch-Dest': 'empty',
