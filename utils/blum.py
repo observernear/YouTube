@@ -132,18 +132,20 @@ class Blum:
         return unquote(string=unquote(string=auth_url.split('tgWebAppData=')[1].split('&tgWebAppVersion')[0]))
     
     async def get_referral_info(self):
-        resp = await self.session.get("https://gateway.blum.codes/v1/friends/balance",proxy = self.proxy)
-        resp_json = await resp.json()
-        if resp_json['canClaim'] == True:
-            claimed = await self.claim_referral()
-            logger.success(f"get_ref | Thread {self.thread} | Claimed referral reward! Claimed: {claimed}")
+        claimed = await self.claim_referral()
+        if claimed == 0:
+            return
+        logger.success(f"get_ref | Thread {self.thread} | Claimed referral reward! Claimed: {claimed}")
         
     
     async def claim_referral(self):
         resp = await self.session.post("https://gateway.blum.codes/v1/friends/claim",proxy = self.proxy)
         resp_json = await resp.json()
-        return resp_json['claimBalance']
-    
+        try:
+            return resp_json['claimBalance']
+        except:
+            return 0
+        
     async def do_tasks(self):
         resp = await self.session.get("https://game-domain.blum.codes/api/v1/tasks",proxy = self.proxy)
         resp_json = await resp.json()
