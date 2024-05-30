@@ -21,7 +21,7 @@ SPEND_DIAMONDS = True # True/False
 
 # сон между играми
 SLEEP_GAME_TIME = [50,100] #[min,max]
-
+MINI_SLEEP = [3,7]
 hello ='''              _                               __  _        
  _ __    ___ | |_  _   _   __ _  ___   ___   / _|| |_  ___ 
 | '_ \  / _ \| __|| | | | / _` |/ __| / _ \ | |_ | __|/ __|
