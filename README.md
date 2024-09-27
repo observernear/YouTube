@@ -17,3 +17,5 @@
    ```bash
    $ python3 main.py
    ```
+
+Полный гайд смотреть тут: https://www.youtube.com/@rmsudo
