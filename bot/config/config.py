@@ -4,7 +4,7 @@ class Settings(BaseSettings):
 
     # тут можете менять под себя
     API_ID: int = 312312231
-    API_HASH: str = 'test'
+    API_HASH: str = 'te342725182f8ed85fde0126a28886b4fast'
 
     PAINT_REWARD_MAX: int = 5
     ENERGY_LIMIT_MAX: int = 7
