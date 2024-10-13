@@ -3,15 +3,23 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
 
     # тут можете менять под себя
+<<<<<<< HEAD
     API_ID: int = 312312231
     API_HASH: str = 'test'
+=======
+    API_ID: int = 21212112
+    API_HASH: str = 'tests'
+>>>>>>> 25aba28 (edit proxy)
 
     PAINT_REWARD_MAX: int = 5
     ENERGY_LIMIT_MAX: int = 7
     RE_CHARGE_SPEED_MAX: int = 7
 
+<<<<<<< HEAD
     USE_PROXY_FROM_FILE: bool = False
 
+=======
+>>>>>>> 25aba28 (edit proxy)
     ENABLE_AUTO_TASKS: bool = True
     ENABLE_AUTO_DRAW: bool = True
     ENABLE_JOIN_TG_CHANNELS: bool = True
@@ -30,6 +38,10 @@ class Settings(BaseSettings):
     SQUAD_SLUG: str = 'rm_sud0'
     USE_REF: bool = True
     REF_ID: str = 'f5064842218_t_s4'
+<<<<<<< HEAD
+=======
+    IN_USE_SESSIONS_PATH: str = 'bot/config/used_sessions.txt'
+>>>>>>> 25aba28 (edit proxy)
 
     DISABLE_IN_NIGHT: bool = True
     NIGHT_TIME: list[int] = [23, 6]
