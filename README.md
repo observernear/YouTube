@@ -46,7 +46,11 @@
    cd qlyukerbot
    ```
 
-2. **Установите зависимости:**
+2. **Получите API ключи:**
+   - Перейдите на [my.telegram.org](https://my.telegram.org) и получите `API_ID` и `API_HASH`.
+   - Добавьте эти данные в файл `bot/config/config.py`.
+
+3. **Установите зависимости:**
    - **Windows**:
      ```bash
      run.bat
@@ -55,10 +59,6 @@
      ```bash
      run.sh
      ```
-
-3. **Получите API ключи:**
-   - Перейдите на [my.telegram.org](https://my.telegram.org) и получите `API_ID` и `API_HASH`.
-   - Добавьте эти данные в файл `bot/config/config.py`.
 
 
 ### Ручная установка
