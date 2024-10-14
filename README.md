@@ -1,8 +1,8 @@
 
 # Qlyuker Bot
 
-[![Bot Link](https://img.shields.io/badge/Telegram-Бот_Link-blue?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/qlyukerbot/start?startapp=bro-228618799)
-[![Channel Link](https://img.shields.io/badge/Telegram-Канал_Link-blue?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/+ap1Yd23CiuVkOTEy)
+[Bot Link](https://t.me/qlyukerbot/start?startapp=bro-5064842218)
+[Channel Link](https://t.me/rm_sud0)
 
 ---
 
@@ -54,12 +54,8 @@
 
 3. **Получите API ключи:**
    - Перейдите на [my.telegram.org](https://my.telegram.org) и получите `API_ID` и `API_HASH`.
-   - Добавьте эти данные в файл `.env`.
+   - Добавьте эти данные в файл `bot/config/config.py`.
 
-4. **Запустите бота:**
-   ```bash
-   python3 main.py --action 3  # Запустить бота
-   ```
 
 ### Ручная установка
 1. **Linux:**
@@ -68,17 +64,14 @@
    python3 -m venv venv
    source venv/bin/activate
    pip3 install -r requirements.txt
-   cp .env-example .env
-   nano .env  # Укажите свои API_ID и API_HASH
    python3 main.py
    ```
 
 2. **Windows:**
    ```bash
    python -m venv venv
-   venv\Scriptsctivate
+   venv\Scripts\activate
    pip install -r requirements.txt
-   copy .env-example .env
    python main.py
    ```
 
@@ -109,30 +102,3 @@
 
 
 ---
-
-## 💰 Поддержка и донаты
-
-Поддержите разработку с помощью криптовалют или платформ:
-
-| Валюта               | Адрес кошелька                                                                       |
-|----------------------|-------------------------------------------------------------------------------------|
-| Bitcoin (BTC)|bc1qt84nyhuzcnkh2qpva93jdqa20hp49edcl94nf6| 
-| Ethereum (ETH)|0xc935e81045CAbE0B8380A284Ed93060dA212fa83| 
-|TON|UQBlvCgM84ijBQn0-PVP3On0fFVWds5SOHilxbe33EDQgryz|
-| Binance Coin (BNB)|0xc935e81045CAbE0B8380A284Ed93060dA212fa83| 
-| Solana (SOL)|3vVxkGKasJWCgoamdJiRPy6is4di72xR98CDj2UdS1BE| 
-| Ripple (XRP)|rPJzfBcU6B8SYU5M8h36zuPcLCgRcpKNB4| 
-| Dogecoin (DOGE)|DST5W1c4FFzHVhruVsa2zE6jh5dznLDkmW| 
-| Polkadot (DOT)|1US84xhUghAhrMtw2bcZh9CXN3i7T1VJB2Gdjy9hNjR3K71| 
-| Litecoin (LTC)|ltc1qcg8qesg8j4wvk9m7e74pm7aanl34y7q9rutvwu| 
-| Matic|0xc935e81045CAbE0B8380A284Ed93060dA212fa83| 
-| Tron (TRX)|TQkDWCjchCLhNsGwr4YocUHEeezsB4jVo5| 
-
-
----
-
-## 📞 Контакты
-
-Если у вас возникли вопросы или предложения:
-- **Telegram**: [Присоединяйтесь к нашему каналу](https://t.me/+ap1Yd23CiuVkOTEy)
-
