@@ -3,8 +3,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
 
     # тут можете менять под себя
-    API_ID: int = 312312231
-    API_HASH: str = 'te342725182f8ed85fde0126a28886b4fast'
+    API_ID: int = 2342
+    API_HASH: str = 'fseesfe'
 
     PAINT_REWARD_MAX: int = 5
     ENERGY_LIMIT_MAX: int = 7
@@ -28,15 +28,15 @@ class Settings(BaseSettings):
     ENABLE_AUTO_JOIN_TO_SQUAD: bool = True
     SQUAD_SLUG: str = 'rm_sud0'
     USE_REF: bool = True
-    REF_ID: str = 'f5064842218_t_s4'
+    REF_ID: str = 'f5064842218_t_s717211'
 
     IN_USE_SESSIONS_PATH: str = 'bot/config/used_sessions.txt'
 
     DISABLE_IN_NIGHT: bool = True
     NIGHT_TIME: list[int] = [23, 6]
 
-    DRAW_RANDOM_X_DIAPOSON: list[int] = [837, 948]
-    DRAW_RANDOM_Y_DIAPOSON: list[int] = [242, 353]
+    DRAW_RANDOM_X_DIAPOSON: list[int] = [456, 567]
+    DRAW_RANDOM_Y_DIAPOSON: list[int] = [120, 231]
     DRAW_RANDOM_COLORS: list[str] = ["#000000"]
 
     ENABLE_EXPERIMENTAL_X3_MODE: bool = False
