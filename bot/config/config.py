@@ -19,7 +19,7 @@ class Settings(BaseSettings):
 
 # настройки ниже лучше не трогать
 
-    USE_RANDOM_DELAY_IN_RUN: bool = True
+    USE_RANDOM_DELAY_IN_RUN: bool = False
     RANDOM_DELAY_IN_RUN: list[int] = [5, 60]
 
     SLEEP_TIME_IN_MINUTES: list[int] = [30, 60]
