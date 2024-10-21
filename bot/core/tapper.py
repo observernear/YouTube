@@ -377,13 +377,6 @@ class Tapper:
                     else:
                         raise Exception(f"Невідомий формат зображення: {content_type}")
 
-                    #save_path = os.path.join('downloaded_images', f"downloaded_image.{format.lower()}")
-                    # Створюємо папку, якщо вона не існує
-                    #os.makedirs(os.path.dirname(save_path), exist_ok=True)
-                    # Зберігаємо зображення у локальну папку
-                    #img.save(save_path, format=format)
-                    #self.info(f"Image saved to {save_path}")
-
                     return img
                 else:
                     raise Exception(f"Failed to download image from {url}, status: {response.status}")
@@ -506,11 +499,10 @@ class Tapper:
                     return None
 
                 if current_image and original_image:
-                    # Порівняння зображень і отримання змінених пікселів
                     changes = await self.compare_images(current_image, original_image, x_offset, y_offset)
                     change = random.choice(changes)
                     num_changes = len(changes)
-                    self.info(f"CHANGESSS - {num_changes} ...")
+                    self.info(f"CHANGESS - {num_changes} ...")
                     updated_x, updated_y, original_pixel_color = change
                     await self.send_draw_request(
                         http_client=http_client,
